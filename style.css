@@ -123,11 +123,26 @@ main img {
 
 /* Few styles for the Getting started section */
 #getting_started {
-    padding: 5rem 8rem;
+    padding: 5rem 10rem;
+    display: flex;
+    gap: 25%;
+}
+
+#getting_started img {
+    width: 450px;
+    background-size: cover;
+    background-blend-mode: darken;
+    padding-top: 0rem;
 }
 
 #getting_started .btn {
     padding: 1rem;
+}
+
+#gs-image p {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
 }
 
 /* end of getting started section */
