@@ -24,17 +24,26 @@ header {
     padding: 2rem 4rem;
 }
 
+/* Styles the logo */
 .logo {
     text-transform: uppercase;
     font-size: 1.5rem;
 }
 
+/* Adds a reasonable font size to the text on the nav bar */
 .page_links {
     font-size: 1.2rem;
 }
 
+/* Adds spacing between the page links on the nav bar */
 .page_links a {
     margin-left: 2rem;
+}
+
+/* Dark background styling */
+.dark_bg {
+    background-color: #181818;
+    color: white;
 }
 
 a {
@@ -44,48 +53,55 @@ a {
 /* Handles the default image size for a page */
 main img {
     border-radius: 30px;
-    max-width: 500px;
-    max-height: 500px;
+    max-width: 140vh;
+    max-height: 140vh;
     height: auto;
     width: auto;
 }
 
-/* Dark background styling */
-.dark_bg {
-    background-color: #181818;
-    color: white;
-}
-
-#coach {
-    margin: 5rem;
-}
-
+/* Styling for the Coach section */
 #coach img {
-    height: 140vh;
+    height: 600px;
+    width: max-content;
 }
+
+#coach_info h1 {
+    font-size: 2.4rem;
+    height: max-content;
+    width: max-content;
+}
+
+/* center the content */
+#coach_info {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+/* End of Coach styling */
 
 /* Turns a text to purple */
 .make_purple {
     color: #A91CFF;
     font-size: 2rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     font-weight: 650;
 }
 
+/* Adds styling to text contents */
 .text_container {
     align-items: center;
     padding-top: 1rem;
     padding-bottom: 3rem;
-    padding-left: 5rem;
+    padding-left: 3rem;
     padding-right: 5rem;
 }
 
-#coach_info {
-    margin-top: auto;
-    margin-bottom: auto;
-    grid-template-columns: 10fr 2fr 3fr;
-    column-gap: 5px;
+#workouts {
+    padding-top: 2rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    padding-bottom: 4rem;
 }
 
 #workouts img {
@@ -107,12 +123,14 @@ main img {
 
 /* Few styles for the Getting started section */
 #getting_started {
-    margin: 5rem;
+    padding: 5rem 8rem;
 }
 
 #getting_started .btn {
     padding: 1rem;
 }
+
+/* end of getting started section */
 
 footer {
     text-align: center;
@@ -130,7 +148,9 @@ footer img {
     margin: 1rem;
 }
 
-a:hover{
+/* Hover feature styling */
+header a:hover,
+main a:hover {
     background-color: white;
     color: #A91CFF;
     padding: 1rem;
@@ -143,18 +163,19 @@ main a:hover {
 
 .flex_content {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .grid_content {
     display: grid;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     grid-template-columns: 10fr 2fr 3fr;
     column-gap: 5px;
 }
 
 /* About us page styling */
+
 #about_us ol {
     margin: 0;
     margin-left: 4rem;
@@ -165,11 +186,22 @@ main a:hover {
     font-size: 3.5rem;
 }
 
-#difference_pitch div{
-    margin-top: 1rem;
+#difference_pitch div {
+    padding-top: 1rem;
 }
 
 #difference_pitch img {
-    max-width: 98%;
-    height: auto;
+    width: 95%;
+    height: 80%;
+}
+
+/* Adds 5rem padding around an element */
+.pad-5 {
+    padding: 5rem;
+}
+
+/* Fixes the visual padding mismatch */
+#commitment {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
 }
