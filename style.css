@@ -71,10 +71,10 @@ header {
 
 .grid_content {
     display: grid;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     grid-template-columns: 10fr 2fr 3fr;
-    column-gap: 5em;
+    column-gap: 5rem;
 }
 
 /* Styling for the buttons */
@@ -96,21 +96,19 @@ a {
 /* Handles the default image size for a page */
 main img {
     border-radius: 30px;
-    /* height: auto; */
-    /* width: auto; */
 }
 
 /* Styling for the Coach section */
 
-#coach img {
-    width: 40rem;
-    height: 30rem;
-    /* min-width: 90%; */
-}
-
 #coach {
     display: flex;
     gap: 4%;
+    padding-left: 8rem;
+}
+
+#coach img {
+    width: 40rem;
+    height: 30rem;
 }
 
 /* center the content */
@@ -155,7 +153,11 @@ main img {
 #gs-image p {
     text-transform: uppercase;
     text-align: center;
-    font-weight: 600;
+    font-weight: bolder;
+}
+
+#gs-image img {
+    height: 12rem;
 }
 
 /* end of getting started section */
@@ -199,11 +201,16 @@ main a:hover {
 
 #who_img img {
     height: 60em;
-    width: 60em;
+    width: 75em;
 }
 
 #about_us h1 {
     font-size: 3.5rem;
+}
+
+/* Styles the "Who We Are" section */
+#difference_pitch {
+    padding-bottom: 2rem;
 }
 
 #difference_pitch div {
@@ -222,6 +229,11 @@ main a:hover {
 
 /* Fixes the visual padding mismatch */
 #commitment {
-    padding-top: 2rem;
-    padding-bottom: 4rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+#commitment img {
+    width: 30rem;
+    height: 30rem;
 }
